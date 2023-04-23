@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF07110D29F49FD600F6EEFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07110C29F49FD600F6EEFF /* AppDelegate.swift */; };
+		CF07110F29F49FD600F6EEFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07110E29F49FD600F6EEFF /* SceneDelegate.swift */; };
+		CF07111129F49FD600F6EEFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07111029F49FD600F6EEFF /* ViewController.swift */; };
+		CF07111429F49FD600F6EEFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF07111229F49FD600F6EEFF /* Main.storyboard */; };
+		CF07111629F49FDB00F6EEFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF07111529F49FDB00F6EEFF /* Assets.xcassets */; };
+		CF07111929F49FDB00F6EEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF07111729F49FDB00F6EEFF /* LaunchScreen.storyboard */; };
+		CF07112229F4A43700F6EEFF /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = CF07112129F4A43700F6EEFF /* FSCalendar */; };
+		CF07112529F4A47D00F6EEFF /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CF07112429F4A47D00F6EEFF /* Realm */; };
+		CF07112729F4A47D00F6EEFF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF07112629F4A47D00F6EEFF /* RealmSwift */; };
+		CF07112929F4B8D300F6EEFF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07112829F4B8D300F6EEFF /* Task.swift */; };
+		CF07112B29F4B90100F6EEFF /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07112A29F4B90100F6EEFF /* TaskService.swift */; };
+		CF07113529F4CD9D00F6EEFF /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07113429F4CD9D00F6EEFF /* AddTaskViewController.swift */; };
+		CFC08CB329F54C9C00952CCD /* TaskDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC08CB229F54C9C00952CCD /* TaskDetailsViewController.swift */; };
+		CFC08CC329F5596400952CCD /* TaskServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC08CB429F5586300952CCD /* TaskServiceTests.swift */; };
+		CFC08CC629F55AE800952CCD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CFC08CC529F55AE800952CCD /* Realm */; };
+		CFC08CC829F55AEC00952CCD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CFC08CC729F55AEC00952CCD /* RealmSwift */; };
+		CFC08CCA29F55B0900952CCD /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = CFC08CC929F55B0900952CCD /* FSCalendar */; };
+		CFC08CCC29F55DFF00952CCD /* CalendarSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC08CCB29F55DFF00952CCD /* CalendarSwitchButton.swift */; };
+		CFC08CCE29F562FE00952CCD /* FSCalendarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC08CCD29F562FD00952CCD /* FSCalendarAppearance.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFC08CBE29F5593B00952CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF07110129F49FD600F6EEFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF07110829F49FD600F6EEFF;
+			remoteInfo = myTestAppForInternship;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF07110929F49FD600F6EEFF /* myTestAppForInternship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTestAppForInternship.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF07110C29F49FD600F6EEFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF07110E29F49FD600F6EEFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF07111029F49FD600F6EEFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF07111329F49FD600F6EEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF07111529F49FDB00F6EEFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF07111829F49FDB00F6EEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF07111A29F49FDB00F6EEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF07112829F4B8D300F6EEFF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CF07112A29F4B90100F6EEFF /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		CF07113429F4CD9D00F6EEFF /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		CFC08CB229F54C9C00952CCD /* TaskDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsViewController.swift; sourceTree = "<group>"; };
+		CFC08CB429F5586300952CCD /* TaskServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskServiceTests.swift; sourceTree = "<group>"; };
+		CFC08CBA29F5593B00952CCD /* myTestAppForInternshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myTestAppForInternshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC08CCB29F55DFF00952CCD /* CalendarSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSwitchButton.swift; sourceTree = "<group>"; };
+		CFC08CCD29F562FD00952CCD /* FSCalendarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarAppearance.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF07110629F49FD600F6EEFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF07112729F4A47D00F6EEFF /* RealmSwift in Frameworks */,
+				CF07112529F4A47D00F6EEFF /* Realm in Frameworks */,
+				CF07112229F4A43700F6EEFF /* FSCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC08CB729F5593B00952CCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC08CC829F55AEC00952CCD /* RealmSwift in Frameworks */,
+				CFC08CCA29F55B0900952CCD /* FSCalendar in Frameworks */,
+				CFC08CC629F55AE800952CCD /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF07110029F49FD600F6EEFF = {
+			isa = PBXGroup;
+			children = (
+				CF07110B29F49FD600F6EEFF /* myTestAppForInternship */,
+				CFC08CBB29F5593B00952CCD /* myTestAppForInternshipTests */,
+				CF07110A29F49FD600F6EEFF /* Products */,
+				CFC08CC429F55AE800952CCD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF07110A29F49FD600F6EEFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF07110929F49FD600F6EEFF /* myTestAppForInternship.app */,
+				CFC08CBA29F5593B00952CCD /* myTestAppForInternshipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF07110B29F49FD600F6EEFF /* myTestAppForInternship */ = {
+			isa = PBXGroup;
+			children = (
+				CF07113329F4BCCF00F6EEFF /* Resources */,
+				CF07111A29F49FDB00F6EEFF /* Info.plist */,
+				CF07110C29F49FD600F6EEFF /* AppDelegate.swift */,
+				CF07110E29F49FD600F6EEFF /* SceneDelegate.swift */,
+				CF07113129F4BC8D00F6EEFF /* Controllers */,
+				CF07113229F4BC9800F6EEFF /* Views */,
+				CF07112F29F4BC7B00F6EEFF /* Models */,
+				CF07112E29F4BC6B00F6EEFF /* Services */,
+			);
+			path = myTestAppForInternship;
+			sourceTree = "<group>";
+		};
+		CF07112E29F4BC6B00F6EEFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF07112A29F4B90100F6EEFF /* TaskService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF07112F29F4BC7B00F6EEFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF07113029F4BC8000F6EEFF /* Realm */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF07113029F4BC8000F6EEFF /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CF07112829F4B8D300F6EEFF /* Task.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		CF07113129F4BC8D00F6EEFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF07111029F49FD600F6EEFF /* ViewController.swift */,
+				CF07113429F4CD9D00F6EEFF /* AddTaskViewController.swift */,
+				CFC08CB229F54C9C00952CCD /* TaskDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF07113229F4BC9800F6EEFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF07111229F49FD600F6EEFF /* Main.storyboard */,
+				CFC08CCB29F55DFF00952CCD /* CalendarSwitchButton.swift */,
+				CFC08CD029F5630800952CCD /* extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF07113329F4BCCF00F6EEFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF07111529F49FDB00F6EEFF /* Assets.xcassets */,
+				CF07111729F49FDB00F6EEFF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFC08CBB29F5593B00952CCD /* myTestAppForInternshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC08CB429F5586300952CCD /* TaskServiceTests.swift */,
+			);
+			path = myTestAppForInternshipTests;
+			sourceTree = "<group>";
+		};
+		CFC08CC429F55AE800952CCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFC08CD029F5630800952CCD /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFC08CCD29F562FD00952CCD /* FSCalendarAppearance.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF07110829F49FD600F6EEFF /* myTestAppForInternship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF07111D29F49FDB00F6EEFF /* Build configuration list for PBXNativeTarget "myTestAppForInternship" */;
+			buildPhases = (
+				CF07110529F49FD600F6EEFF /* Sources */,
+				CF07110629F49FD600F6EEFF /* Frameworks */,
+				CF07110729F49FD600F6EEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myTestAppForInternship;
+			packageProductDependencies = (
+				CF07112129F4A43700F6EEFF /* FSCalendar */,
+				CF07112429F4A47D00F6EEFF /* Realm */,
+				CF07112629F4A47D00F6EEFF /* RealmSwift */,
+			);
+			productName = myTestAppForInternship;
+			productReference = CF07110929F49FD600F6EEFF /* myTestAppForInternship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFC08CB929F5593B00952CCD /* myTestAppForInternshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC08CC029F5593C00952CCD /* Build configuration list for PBXNativeTarget "myTestAppForInternshipTests" */;
+			buildPhases = (
+				CFC08CB629F5593B00952CCD /* Sources */,
+				CFC08CB729F5593B00952CCD /* Frameworks */,
+				CFC08CB829F5593B00952CCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC08CBF29F5593B00952CCD /* PBXTargetDependency */,
+			);
+			name = myTestAppForInternshipTests;
+			packageProductDependencies = (
+				CFC08CC529F55AE800952CCD /* Realm */,
+				CFC08CC729F55AEC00952CCD /* RealmSwift */,
+				CFC08CC929F55B0900952CCD /* FSCalendar */,
+			);
+			productName = myTestAppForInternshipTests;
+			productReference = CFC08CBA29F5593B00952CCD /* myTestAppForInternshipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF07110129F49FD600F6EEFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CF07110829F49FD600F6EEFF = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					CFC08CB929F5593B00952CCD = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = CF07110829F49FD600F6EEFF;
+					};
+				};
+			};
+			buildConfigurationList = CF07110429F49FD600F6EEFF /* Build configuration list for PBXProject "myTestAppForInternship" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF07110029F49FD600F6EEFF;
+			packageReferences = (
+				CF07112029F4A43700F6EEFF /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = CF07110A29F49FD600F6EEFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF07110829F49FD600F6EEFF /* myTestAppForInternship */,
+				CFC08CB929F5593B00952CCD /* myTestAppForInternshipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF07110729F49FD600F6EEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF07111929F49FDB00F6EEFF /* LaunchScreen.storyboard in Resources */,
+				CF07111629F49FDB00F6EEFF /* Assets.xcassets in Resources */,
+				CF07111429F49FD600F6EEFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC08CB829F5593B00952CCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF07110529F49FD600F6EEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC08CB329F54C9C00952CCD /* TaskDetailsViewController.swift in Sources */,
+				CF07112B29F4B90100F6EEFF /* TaskService.swift in Sources */,
+				CF07113529F4CD9D00F6EEFF /* AddTaskViewController.swift in Sources */,
+				CF07112929F4B8D300F6EEFF /* Task.swift in Sources */,
+				CF07111129F49FD600F6EEFF /* ViewController.swift in Sources */,
+				CFC08CCC29F55DFF00952CCD /* CalendarSwitchButton.swift in Sources */,
+				CF07110D29F49FD600F6EEFF /* AppDelegate.swift in Sources */,
+				CFC08CCE29F562FE00952CCD /* FSCalendarAppearance.swift in Sources */,
+				CF07110F29F49FD600F6EEFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC08CB629F5593B00952CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC08CC329F5596400952CCD /* TaskServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFC08CBF29F5593B00952CCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF07110829F49FD600F6EEFF /* myTestAppForInternship */;
+			targetProxy = CFC08CBE29F5593B00952CCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF07111229F49FD600F6EEFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF07111329F49FD600F6EEFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF07111729F49FDB00F6EEFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF07111829F49FDB00F6EEFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF07111B29F49FDB00F6EEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF07111C29F49FDB00F6EEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF07111E29F49FDB00F6EEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myTestAppForInternship/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompony.myTestAppForInternship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF07111F29F49FDB00F6EEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myTestAppForInternship/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompony.myTestAppForInternship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CFC08CC129F5593C00952CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompony.myTestAppForInternshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTestAppForInternship.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/myTestAppForInternship";
+			};
+			name = Debug;
+		};
+		CFC08CC229F5593C00952CCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompony.myTestAppForInternshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTestAppForInternship.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/myTestAppForInternship";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF07110429F49FD600F6EEFF /* Build configuration list for PBXProject "myTestAppForInternship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF07111B29F49FDB00F6EEFF /* Debug */,
+				CF07111C29F49FDB00F6EEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF07111D29F49FDB00F6EEFF /* Build configuration list for PBXNativeTarget "myTestAppForInternship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF07111E29F49FDB00F6EEFF /* Debug */,
+				CF07111F29F49FDB00F6EEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC08CC029F5593C00952CCD /* Build configuration list for PBXNativeTarget "myTestAppForInternshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC08CC129F5593C00952CCD /* Debug */,
+				CFC08CC229F5593C00952CCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF07112029F4A43700F6EEFF /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.38.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF07112129F4A43700F6EEFF /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112029F4A43700F6EEFF /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		CF07112429F4A47D00F6EEFF /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		CF07112629F4A47D00F6EEFF /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		CFC08CC529F55AE800952CCD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		CFC08CC729F55AEC00952CCD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112329F4A47D00F6EEFF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		CFC08CC929F55B0900952CCD /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF07112029F4A43700F6EEFF /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF07110129F49FD600F6EEFF /* Project object */;
+}
